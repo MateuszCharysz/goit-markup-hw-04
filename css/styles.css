@@ -49,7 +49,7 @@ body {
   flex-basis: 492px;
 }
 
-.flex-menu-right {
+.menu-flex-right {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -90,11 +90,26 @@ body {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
-  color: inherit;
+  color: transparent;
   text-decoration: none;
   display: block;
   letter-spacing: 0.03em;
+  width: 145px;
+
 }
+
+.logo-color {
+  background-image: linear-gradient(to right, var(--highlight-color) 0%, var(--highlight-color) 40.4%, var(--main-font-color) 40.4%, var(--main-font-color) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.logo-color-contr {
+  background-image: linear-gradient(to right, var(--highlight-color) 0%, var(--highlight-color) 40.4%, #fff 40.4%, #fff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 
 .flex-phone-mail {
   flex-basis: content;
@@ -110,6 +125,13 @@ body {
   min-height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.call-to-action-bg {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url(/images/index/cta_bg.jpg);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 1600px, 1600px;
+  background-position: center, center;
 }
 
 .call-to-action-h1 {
@@ -252,6 +274,13 @@ body {
 }
 
 /*here start footer*/
+.footer-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
 .contact-data {
   min-height: 252px;
   padding: 60px 0;
@@ -299,7 +328,8 @@ body {
   color: inherit;
 }
 
-.filter-button:active, .filter-button:hover {
+.filter-button:active,
+.filter-button:hover {
   background-color: var(--highlight-color);
   color: #fff;
   /* shadow-middle */
@@ -332,10 +362,9 @@ body {
   flex-basis: calc((100%-60px)/3);
 }
 
-.project > p {
-  padding: 0 0 20px 24px;
+.project>img {
+  display: block;
 }
- .project > img { display: block;}
 
 .project-title {
   font-family: "Roboto";
@@ -357,7 +386,7 @@ body {
   /* identical to box height, or 188% */
   letter-spacing: 0.03em;
   color: var(--ordinary-font-color);
-    padding: 0 0 20px 24px;
+  padding: 0 0 20px 24px;
 }
 
 /*CSS positions universal (across many html)*/
