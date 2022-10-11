@@ -7,6 +7,7 @@
   --element-gap: 30px;
   --team-and-button-color: #f5f4fa;
   --project-gallery-border-color: #eeeeee;
+  --client-logo-color: #AFB1B8;
 }
 
 /*Here is normalization - chrome*/
@@ -85,7 +86,11 @@ body {
 .gray-mail-phone {
   color: var(--ordinary-font-color);
 }
-.icon-mail-phone {stroke: currentColor; margin-right: 10px;}
+
+.icon-mail-phone {
+  fill: currentColor;
+  margin-right: 10px;
+}
 
 .logo {
   font-family: "Raleway";
@@ -113,7 +118,7 @@ body {
 
 .flex-phone-mail {
   flex-basis: content;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 
 .contrast {
@@ -187,6 +192,7 @@ body {
   text-transform: uppercase;
   /*position of next element*/
   margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .feature>p {
@@ -197,6 +203,15 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--ordinary-font-color);
+}
+
+.icon-feature {
+  fill: var(--client-logo-color);
+  background-color: var(--team-and-button-color);
+  width: inherit;
+  height: 120px;
+  border-radius: 4px;
+  padding: 25px 0;
 }
 
 .boxes {
@@ -266,6 +281,29 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--ordinary-font-color);
+}
+
+.client-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client-list>li {
+  line-height: 0px;
+}
+
+.icon-client-logo {
+  fill: var(--client-logo-color);
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--client-logo-color);
+  border-radius: 4px;
+  padding: 25px 0;
+}
+
+.icon-client-logo:hover {
+  fill: var(--highlight-color);
+  border-color: var(--highlight-color);
 }
 
 /*here start footer*/
