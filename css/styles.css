@@ -308,6 +308,7 @@ body {
 .icon-client-logo:hover {
   fill: var(--highlight-color);
   border-color: var(--highlight-color);
+  cursor: pointer;
 }
 
 /*here start footer*/
