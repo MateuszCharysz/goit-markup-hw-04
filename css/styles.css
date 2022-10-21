@@ -36,9 +36,16 @@ body {
   color: var(--main-font-color);
 }
 
-.menu {
+.menu-border {
   border-bottom: 1px solid #ececec;
   min-height: 80px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu {
+  min-height: 79px;
   padding: 0 27px 0 15px;
   display: flex;
   justify-content: space-between;
@@ -131,6 +138,12 @@ body {
   min-height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .call-to-action-bg {
@@ -148,8 +161,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   width: 696px;
-  /*position of next element*/
-  margin-bottom: 30px;
 }
 
 .call-to-action-button {
@@ -163,8 +174,7 @@ body {
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: inherit;
-  /*position*/
-
+  border: 0px;
 }
 
 .call-to-action-button:hover {
@@ -322,7 +332,9 @@ body {
 .contact-data {
   min-height: 252px;
   padding: 60px 0;
-
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .address-margin {
@@ -480,6 +492,9 @@ body {
 /*CSS positions universal (across many html)*/
 .section {
   padding: 94px 0;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-bot-margin {
